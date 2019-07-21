@@ -44,7 +44,10 @@
         <div class="container">
             <footer>
                 <hr />
-                <p>&copy; 2018 - domicats</p>
+                <p>&copy; 2018 - domicats
+                <button @click="test">test</button>
+                
+                </p>
             </footer>
         </div>
     </div>
@@ -55,9 +58,34 @@ import { Vue, Component } from 'vue-property-decorator'
 @Component({
     name: 'App'
 })
-//export default class App extends Vue {
 export default {
-    
+    data() {
+        return {
+            isOpen: false,
+            ws: null,
+            errConn: true,
+            fnc: null
+        };
+    },
+    created: function () {
+        const protocol = document.location.protocol === "https:" ? "wss" : "ws";
+        const url = protocol + "://" + window.location.host + "/test";
+        this.ws = new WebSocket(url);
+        this.ws.onopen = function () {
+            this.isOpen = true;
+            console.log("Web Socket is opened");
+        }.bind(this);
+        this.ws.onclose = function () {   // websocket is closed.
+            this.isOpen = false;
+            console.log("Connection is closed...");
+        }.bind(this);
+    },
+    methods: {
+        test() {
+            alert('hhhh');
+            this.ws.send('fffffffffffffffffff');
+        }
+    } 
 }
 </script>
 <style scoped lang="scss">

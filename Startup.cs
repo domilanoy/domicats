@@ -21,6 +21,7 @@ namespace domicats
             
             services.Configure<RouteOptions>(options => options.LowercaseUrls = true);
             services.AddMvc();
+            services.AddSingleton<WebSocketManager>();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -30,6 +31,8 @@ namespace domicats
                 app.UseDeveloperExceptionPage();
             }
             app.UseStaticFiles();
+            app.UseWebSockets();
+            app.UseMiddleware<WebSocketMiddleware>();
 
             app.UseMvc(routes =>
             {
