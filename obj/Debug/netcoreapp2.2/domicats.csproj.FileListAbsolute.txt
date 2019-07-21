@@ -1,0 +1,111 @@
+D:\Data\Hosting\GitHub\domicats\domicats\bin\Debug\netcoreapp2.2\domicats.deps.json
+D:\Data\Hosting\GitHub\domicats\domicats\bin\Debug\netcoreapp2.2\domicats.runtimeconfig.json
+D:\Data\Hosting\GitHub\domicats\domicats\bin\Debug\netcoreapp2.2\domicats.runtimeconfig.dev.json
+D:\Data\Hosting\GitHub\domicats\domicats\bin\Debug\netcoreapp2.2\domicats.dll
+D:\Data\Hosting\GitHub\domicats\domicats\bin\Debug\netcoreapp2.2\domicats.pdb
+D:\Data\Hosting\GitHub\domicats\domicats\bin\Debug\netcoreapp2.2\domicats.Views.dll
+D:\Data\Hosting\GitHub\domicats\domicats\bin\Debug\netcoreapp2.2\domicats.Views.pdb
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.csprojAssemblyReference.cache
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.csproj.CoreCompileInputs.cache
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.RazorAssemblyInfo.cache
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.RazorAssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.AssemblyInfoInputs.cache
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.AssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.TagHelpers.input.cache
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.TagHelpers.output.cache
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.RazorCoreGenerate.cache
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\Razor\Views\Template\Index.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.RazorTargetAssemblyInfo.cache
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.RazorTargetAssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.Views.pdb
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.dll
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.pdb
+D:\Data\Hosting\GitHub\domicats\domicats\obj\Debug\netcoreapp2.2\domicats.csproj.CopyComplete
+D:\Data\Hosting\GitHub\domicats\old\bin\Debug\netcoreapp2.2\domicats.deps.json
+D:\Data\Hosting\GitHub\domicats\old\bin\Debug\netcoreapp2.2\domicats.runtimeconfig.json
+D:\Data\Hosting\GitHub\domicats\old\bin\Debug\netcoreapp2.2\domicats.runtimeconfig.dev.json
+D:\Data\Hosting\GitHub\domicats\old\bin\Debug\netcoreapp2.2\domicats.dll
+D:\Data\Hosting\GitHub\domicats\old\bin\Debug\netcoreapp2.2\domicats.pdb
+D:\Data\Hosting\GitHub\domicats\old\bin\Debug\netcoreapp2.2\domicats.Views.dll
+D:\Data\Hosting\GitHub\domicats\old\bin\Debug\netcoreapp2.2\domicats.Views.pdb
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.csprojAssemblyReference.cache
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.csproj.CoreCompileInputs.cache
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.RazorAssemblyInfo.cache
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.RazorAssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.AssemblyInfoInputs.cache
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.AssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.TagHelpers.input.cache
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.TagHelpers.output.cache
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.RazorCoreGenerate.cache
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\Razor\Views\IceAndFire\Index.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\Razor\Views\IDontNeedTypeScript\Index.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Navigation.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\Razor\Views\Template\Index.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.RazorTargetAssemblyInfo.cache
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.RazorTargetAssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.Views.pdb
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.dll
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.pdb
+D:\Data\Hosting\GitHub\domicats\old\obj\Debug\netcoreapp2.2\domicats.csproj.CopyComplete
+D:\Data\Hosting\GitHub\domicats\old - Copie\bin\Debug\netcoreapp2.2\domicats.deps.json
+D:\Data\Hosting\GitHub\domicats\old - Copie\bin\Debug\netcoreapp2.2\domicats.runtimeconfig.json
+D:\Data\Hosting\GitHub\domicats\old - Copie\bin\Debug\netcoreapp2.2\domicats.runtimeconfig.dev.json
+D:\Data\Hosting\GitHub\domicats\old - Copie\bin\Debug\netcoreapp2.2\domicats.dll
+D:\Data\Hosting\GitHub\domicats\old - Copie\bin\Debug\netcoreapp2.2\domicats.pdb
+D:\Data\Hosting\GitHub\domicats\old - Copie\bin\Debug\netcoreapp2.2\domicats.Views.dll
+D:\Data\Hosting\GitHub\domicats\old - Copie\bin\Debug\netcoreapp2.2\domicats.Views.pdb
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.csproj.CoreCompileInputs.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.RazorAssemblyInfo.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.RazorAssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.AssemblyInfoInputs.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.AssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.TagHelpers.input.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.TagHelpers.output.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.RazorCoreGenerate.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\Razor\Views\Template\Index.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.RazorTargetAssemblyInfo.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.RazorTargetAssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.Views.pdb
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.dll
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.pdb
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.csproj.CopyComplete
+D:\Data\Hosting\GitHub\domicats\old - Copie\obj\Debug\netcoreapp2.2\domicats.csprojAssemblyReference.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\bin\Debug\netcoreapp2.2\domicats.deps.json
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\bin\Debug\netcoreapp2.2\domicats.runtimeconfig.json
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\bin\Debug\netcoreapp2.2\domicats.runtimeconfig.dev.json
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\bin\Debug\netcoreapp2.2\domicats.dll
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\bin\Debug\netcoreapp2.2\domicats.pdb
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\bin\Debug\netcoreapp2.2\domicats.Views.dll
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\bin\Debug\netcoreapp2.2\domicats.Views.pdb
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.csproj.CoreCompileInputs.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.RazorAssemblyInfo.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.RazorAssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.AssemblyInfoInputs.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.AssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.TagHelpers.input.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.TagHelpers.output.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.RazorCoreGenerate.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\Razor\Views\Template\Index.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.RazorTargetAssemblyInfo.cache
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.RazorTargetAssemblyInfo.cs
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.Views.pdb
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.dll
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.pdb
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.csproj.CopyComplete
+D:\Data\Hosting\GitHub\domicats\old - Copie (2)\obj\Debug\netcoreapp2.2\domicats.csprojAssemblyReference.cache
