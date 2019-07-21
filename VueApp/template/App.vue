@@ -63,6 +63,7 @@ export default {
         return {
             isOpen: false,
             ws: null,
+            callbacks: new Map(),
             errConn: true,
             fnc: null
         };
@@ -74,6 +75,28 @@ export default {
         this.ws.onopen = function () {
             this.isOpen = true;
             console.log("Web Socket is opened");
+            this.ws.onmessage = (message: any) => {
+                alert(message.data);
+                try {
+                    const resp = JSON.parse(message.data);
+                    const error = resp.error;
+                    if (error !== '') {
+                        alert(error); return;
+                    }
+                    const wsid = '' + resp.wsid;
+                    if (this.callbacks.has(wsid)) {
+                        this.callbacks.get(wsid)(resp.result);
+                        this.callbacks.delete(wsid);
+                    }
+                    //
+                    if (resp.action === 'ChangtEvent') {
+                        alert('changement');
+                    }
+                }
+                catch(e) {
+                    alert('erreur');
+                }
+            };
         }.bind(this);
         this.ws.onclose = function () {   // websocket is closed.
             this.isOpen = false;
@@ -82,8 +105,17 @@ export default {
     },
     methods: {
         test() {
-            alert('hhhh');
-            this.ws.send('fffffffffffffffffff');
+            this.callService('cats', {}, (data) => { alert('hhhhhhhhhhh' + data); });
+        },
+        callService(action: string, param: any, callback: any) {
+            const wsid = '' + Math.random();
+            if (callback)
+                this.callbacks.set(wsid, callback);
+            var formData = (param === null) ? {} : param;
+            formData['wsid'] = '' + wsid;
+            formData['action'] = action;
+            for (let attrname in param) formData[attrname] = param[attrname];
+            this.ws.send(JSON.stringify(formData));
         }
     } 
 }

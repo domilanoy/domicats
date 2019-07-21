@@ -4,12 +4,17 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <TypeScriptToolsVersion>3.1</TypeScriptToolsVersion>
+    <Authors>Domique</Authors>
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="CatmashAPI\**" />
     <Compile Remove="VueApp\app\**" />
+    <Content Remove="CatmashAPI\**" />
     <Content Remove="VueApp\app\**" />
+    <EmbeddedResource Remove="CatmashAPI\**" />
     <EmbeddedResource Remove="VueApp\app\**" />
+    <None Remove="CatmashAPI\**" />
     <None Remove="VueApp\app\**" />
   </ItemGroup>
 
@@ -56,6 +61,10 @@
     <Folder Include="VueApp\common\types\" />
     <Folder Include="VueApp\common\utils\" />
     <Folder Include="VueApp\__tests__\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="CatmashAPI\CatmashAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>

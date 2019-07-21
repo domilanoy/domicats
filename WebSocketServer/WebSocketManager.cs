@@ -11,9 +11,11 @@ namespace domicats
     public class WebSocketManager
     {
         private static ConcurrentDictionary<string, WebSocket> _sockets = new ConcurrentDictionary<string, WebSocket>();
+        private static UIManager _UIManager;
 
         public WebSocketManager()
         {
+            _UIManager = new UIManager(this);
         }
 
         public WebSocket GetSocketById(string id)
@@ -40,8 +42,7 @@ namespace domicats
 
         public async Task RemoveSocket(string id)
         {
-            WebSocket socket;
-            _sockets.TryRemove(id, out socket);
+            _sockets.TryRemove(id, out WebSocket socket);
 
             await socket.CloseAsync(closeStatus: WebSocketCloseStatus.NormalClosure,
                                     statusDescription: "Closed by the WebSocketManager",
@@ -64,7 +65,7 @@ namespace domicats
 
         public void ReceivedMessage(WebSocket webSocket, string msg)
         {
-            string f = msg;     //test
+            _UIManager.AnswerTheDemand(webSocket, msg);
         }
 
         public async Task SendMessageAsync(WebSocket socket, string message)
