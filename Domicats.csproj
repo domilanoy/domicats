@@ -57,10 +57,7 @@
     <Folder Include="VueApp\common\components\" />
     <Folder Include="VueApp\common\config\" />
     <Folder Include="VueApp\common\design\" />
-    <Folder Include="VueApp\common\services\" />
-    <Folder Include="VueApp\common\types\" />
     <Folder Include="VueApp\common\utils\" />
-    <Folder Include="VueApp\__tests__\" />
   </ItemGroup>
 
   <ItemGroup>

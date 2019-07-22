@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 
 namespace CatmashAPI
 {
@@ -17,7 +15,6 @@ namespace CatmashAPI
                 }
             }
         }
-
         public int VoteCount
         {
             get
@@ -40,6 +37,5 @@ namespace CatmashAPI
             }
             return ok;
         }
-
     }
 }

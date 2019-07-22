@@ -12,6 +12,9 @@ html,
 body {
 	font-family: 'Roboto', sans-serif;
 }
+br {
+    clear: both;
+}
 
 .container {
 	width: 90% !important;
@@ -40,4 +43,68 @@ label.label {
 .component-fade-enter,
 .component-fade-leave-to {
 	opacity: 0;
+}
+
+#appv .container {
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 10;
+}
+#appv .container:first-of-type {
+    z-index: 100;
+}
+#appv .header section {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgb(255,255,255);
+    padding-top: 1.2em;
+    position: fixed;
+}
+#appv .header .colums {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    width: 100%;
+    background-color: rgb(255,255,255);
+    padding-top: 1.2em;
+}
+
+
+
+.catcont {
+    float: left;
+    display: block;
+    width: 10em;
+    margin: .5em;
+    background-color: rgb(240, 240, 240);
+    border-radius: .3em;
+}
+.catcont img {
+    width: 10em;
+    height: auto;
+    max-height: 12em;
+    border-radius: .3em .3em 0 0;
+}
+.catcont div {
+    height: 12em;
+}
+.catcont p {
+    padding: 0 .3em .2em;
+}
+.catcont p span {
+    font-size: .9em;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.catcont p span:first-of-type {
+    width: 5.8em;
+    display: inline-block;
+}
+.catcont p span:nth-of-type(2) {
+    margin-right: .5em;
 }
