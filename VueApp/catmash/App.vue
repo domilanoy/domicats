@@ -23,8 +23,8 @@
                     </div>
                 </section>
             </div>
+            <notifications id="notif" group="all" />
             <div class="container">
-                <notifications group="all" />
                 <div class="columns">
                     <section class="section">
                         <transition name="component-fade" mode="out-in">

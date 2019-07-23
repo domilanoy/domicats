@@ -6153,37 +6153,36 @@ var render = function() {
     [
       _vm.init
         ? _c("loader")
-        : _c("div", [
-            _c("div", { staticClass: "container header" }, [
-              _c("section", { staticClass: "section" }, [
-                _c("div", { staticClass: "columns" }, [
-                  _c(
-                    "div",
-                    { staticClass: "column" },
-                    [
-                      _c("router-link", { attrs: { to: { name: "Cats" } } }, [
-                        _vm._v("Les chats")
-                      ])
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "column" }, [
-                    _vm._v("\n                        Nombre de votes : "),
-                    _vm.voteCount > -1
-                      ? _c("span", [_vm._v(_vm._s(_vm.voteCount))])
-                      : _vm._e()
+        : _c(
+            "div",
+            [
+              _c("div", { staticClass: "container header" }, [
+                _c("section", { staticClass: "section" }, [
+                  _c("div", { staticClass: "columns" }, [
+                    _c(
+                      "div",
+                      { staticClass: "column" },
+                      [
+                        _c("router-link", { attrs: { to: { name: "Cats" } } }, [
+                          _vm._v("Les chats")
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "column" }, [
+                      _vm._v("\n                        Nombre de votes : "),
+                      _vm.voteCount > -1
+                        ? _c("span", [_vm._v(_vm._s(_vm.voteCount))])
+                        : _vm._e()
+                    ])
                   ])
                 ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "container" },
-              [
-                _c("notifications", { attrs: { group: "all" } }),
-                _vm._v(" "),
+              ]),
+              _vm._v(" "),
+              _c("notifications", { attrs: { id: "notif", group: "all" } }),
+              _vm._v(" "),
+              _c("div", { staticClass: "container" }, [
                 _c("div", { staticClass: "columns" }, [
                   _c(
                     "section",
@@ -6199,10 +6198,10 @@ var render = function() {
                     1
                   )
                 ])
-              ],
-              1
-            )
-          ]),
+              ])
+            ],
+            1
+          ),
       _vm._v(" "),
       _vm._m(0)
     ],
@@ -6259,9 +6258,7 @@ var render = function() {
       _c(
         "span",
         {
-          attrs: {
-            title: "Placer ce chat dans mes pr&eacute;f&eacute;r&eacute;s"
-          },
+          attrs: { title: "Placer ce chat dans mes preferences" },
           on: { click: _vm.prefer }
         },
         [_vm._v("++")]

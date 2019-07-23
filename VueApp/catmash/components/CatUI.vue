@@ -6,7 +6,7 @@
         <p>
             <span ref="scoreElt">Score {{ _score }}</span>
             <span @click="vote" title="Voter pour ce chat">Voter</span>
-            <span @click="prefer" title="Placer ce chat dans mes pr&eacute;f&eacute;r&eacute;s">++</span>
+            <span @click="prefer" title="Placer ce chat dans mes preferences">++</span>
         </p>
     </div>
 </template>
