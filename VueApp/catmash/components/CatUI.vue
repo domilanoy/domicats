@@ -4,7 +4,7 @@
             <img :data-id="id" :src="url" />
         </div>
         <p>
-            <span>Score {{score}}</span>
+            <span ref="scoreElt">Score {{ _score }}</span>
             <span @click="vote" title="Voter pour ce chat">Voter</span>
             <span @click="prefer" title="Placer ce chat dans mes pr&eacute;f&eacute;r&eacute;s">++</span>
         </p>
@@ -25,6 +25,21 @@ export default {
         id: String,
         url: String,
         score: Number
+    },
+    data() {
+        return {
+            _score: 0
+        }
+    },
+    created() {
+        const self: any = this;
+        self._score = self.score;
+        self.$eventBus.$on('updateScore', (id: string, score: number) => {
+            if (id === self.id) {
+                self._score = score;
+                self.$refs.scoreElt.innerText = 'Score ' + score;
+            }
+        });
     },
     methods: {
         vote: function () {
@@ -48,7 +63,7 @@ export default {
             }.bind(this));
         },
         prefer: function () {
-            let prefer: string = localStorage.getItem("catmash_prefer");
+            let prefer: string | null = localStorage.getItem("catmash_prefer");
             if (prefer) {
                 if (! prefer.includes(',' + this.id + ','))  prefer += this.id + ',';
 

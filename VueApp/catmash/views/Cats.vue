@@ -2,7 +2,6 @@
     <div id="catsv">
         <div class="container">
             <template v-for="(cat, index) in cats" v-if="cats">
-                <!--<br v-if="index > 0 && index % 5 == 0" />-->
                 <cat-ui :id="cat.Id" :url="cat.Url" :score="cat.Score"></cat-ui>
             </template>
         </div>
@@ -11,9 +10,6 @@
 <script lang="ts">
 import { Vue, Component } from 'vue-property-decorator';
 import CatUi from '@/catmash/components/CatUi.vue';
-import Cat from '../../common/types/cat';
-import Communication from '../../common/services/communicationService';
-
 
 @Component({
     name: 'Cats',
@@ -24,15 +20,20 @@ import Communication from '../../common/services/communicationService';
 export default class Cats extends Vue {
     cats = null;
 
-    created(): void {
-        Communication.callService('cats', {}, function (result: string) {
-            try {
-                this.cats = JSON.parse(result);
+    mounted(): void {
+        const self: any = this;
+        self.$store.watch(      // when modification
+            function (state: any) {
+                return state.cats;
+            },
+            function (val: any) {
+                self.cats = val;
+            },
+            {
+                deep: true
             }
-            catch (e) {
-                alert(e.message);
-            }
-        }.bind(this));
+        );
+        this.cats = this.$store.getters.cats;
     }
 }
 </script>

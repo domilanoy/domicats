@@ -1,9 +1,12 @@
+import EventUiService from './eventUiService';
+
 export default class Communication {
     private static isOpen: boolean = false;
     private static ws: any = null;
-    private static callbacks: Map = new Map();
+    private static callbacks: Map<string, Function> = new Map();
 
-    private static init(isDone: Function): void {
+    public static init(vueInstance: any, isDone: Function | any): void {
+
         if (Communication.isOpen) { isDone(true); return; }
         const doc: any = document;
         const protocol = doc.location.protocol === "https:" ? "wss" : "ws";
@@ -18,7 +21,7 @@ export default class Communication {
                     const resp = JSON.parse(message.data);
                     const error = resp.error;
                     if (error !== '') {
-                        alert(error); return;
+                        alert('error onmessage=' + error); return;
                     }
                     const wsid = '' + resp.wsid;
                     if (Communication.callbacks.has(wsid)) {
@@ -27,11 +30,11 @@ export default class Communication {
                     }
                     //
                     if (resp.action === 'ChangtEvent') {
-                        alert('changement');
+                        EventUiService.manageEvent(vueInstance, resp.result);
                     }
                 }
                 catch (e) {
-                    alert('erreur ws.onmessage');
+                    alert('erreur ws.onmessage ' + e.message);
                 }
             };
             Communication.isOpen = true;
@@ -43,32 +46,13 @@ export default class Communication {
         }.bind(this);
     }
 
-    static callService(action: string, param: any, callback: any): void {
-        Communication.init((isDone: boolean) => {
-            if (!isDone) return;
-            const wsid = '' + Math.random();
-            if (callback) this.callbacks.set(wsid, callback);
-            let formData = { wsid: '' + wsid, action: action, param: JSON.stringify(param) };
-            Communication.ws.send(JSON.stringify(formData));
-        });
+    static callService(action: string, param: any, callback: Function): void {
+        const wsid = '' + Math.random();
+        if (callback) this.callbacks.set(wsid, callback);
+        let formData = (param === null) ? {} : param;
+        formData['wsid'] = '' + wsid;
+        formData['action'] = action;
+        //alert(JSON.stringify(formData));    //
+        Communication.ws.send(JSON.stringify(formData));
     }
-
-
-    /**
-     * Show success notification
-     *
-     * @param {Object} vueInstance - Vue instance
-     * @param {String} message - Message which to display on Notification
-     */
-    static callComm(vueInstance: any, message: string) {
-        /*vueInstance.$notify({
-            group: 'global',
-            type: 'success',
-            title: 'Success',
-            text: message,
-            duration: 3500
-        })*/
-    }
-
-    
 }

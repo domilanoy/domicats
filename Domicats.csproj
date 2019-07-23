@@ -10,12 +10,21 @@
   <ItemGroup>
     <Compile Remove="CatmashAPI\**" />
     <Compile Remove="VueApp\app\**" />
+    <Compile Remove="VueApp\catmash\store\modules\**" />
     <Content Remove="CatmashAPI\**" />
     <Content Remove="VueApp\app\**" />
+    <Content Remove="VueApp\catmash\store\modules\**" />
     <EmbeddedResource Remove="CatmashAPI\**" />
     <EmbeddedResource Remove="VueApp\app\**" />
+    <EmbeddedResource Remove="VueApp\catmash\store\modules\**" />
     <None Remove="CatmashAPI\**" />
     <None Remove="VueApp\app\**" />
+    <None Remove="VueApp\catmash\store\modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="VueApp\catmash\store\state.ts" />
+    <None Remove="VueApp\catmash\store\store.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -62,6 +71,10 @@
 
   <ItemGroup>
     <ProjectReference Include="CatmashAPI\CatmashAPI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="VueApp\catmash\store\store.ts" />
   </ItemGroup>
 
   <ItemGroup>

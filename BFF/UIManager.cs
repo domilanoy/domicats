@@ -19,14 +19,14 @@ namespace domicats
 
         public void AnswerTheDemand(WebSocket webSocket, string msg)
         {
-            string wsid = "", action = "", param = "";
+            Dictionary<string, object> dict;
+            string wsid = "", action = "";
             // analyze message
             try
             {
-                Message message = JsonConvert.DeserializeObject<Message>(msg);
-                wsid = message.Wsid;
-                action = message.Action;
-                param = message.Param;
+                dict = JsonConvert.DeserializeObject<Dictionary<string, object>>(msg);
+                wsid = dict["wsid"].ToString();
+                action = dict["action"].ToString();
             }
             catch (Exception ex)
             {
@@ -34,13 +34,13 @@ namespace domicats
                 return;
             }
             // execute
-            var (result, error) = Execute(action, param);
+            var (result, error) = Execute(action, dict);
             SendMessage(webSocket, wsid, action, result, error);
         }
 
 
         // private
-        private (string result, string error) Execute(string action, string param)
+        private (string result, string error) Execute(string action, Dictionary<string, object> param)
         {
             // execute
             string result = "", error = "";
@@ -55,8 +55,7 @@ namespace domicats
                         result = _catmashService.VoteCount.ToString();
                         break;
                     case "vote":
-                        Dictionary<string, object> dict = JsonConvert.DeserializeObject<Dictionary<string, object>>(param);
-                        string id = dict["id"].ToString();
+                        string id = param["id"].ToString();
                         bool res = _catmashService.SetVote(id);
                         result = res.ToString();
                         if (res)
@@ -64,8 +63,9 @@ namespace domicats
                             // changement
                             new Thread((delegate ()
                             {
-                                Thread.Sleep(2000);
-                                SendMessageToAll("ChangtEvent", "", "");
+                                Thread.Sleep(1000);
+                                var obj = new { id, voteCount =_catmashService.VoteCount, score = _catmashService.GetScore(id) };
+                                SendMessageToAll("ChangtEvent", JsonConvert.SerializeObject(obj), "");
                             })).Start();
                         }
                         //
@@ -96,13 +96,6 @@ namespace domicats
                 await _webSocketManager.SendMessageToAllAsync(msg);
             else
                 await _webSocketManager.SendMessageAsync(webSocket, msg);
-        }
-
-        private class Message
-        {
-            public string Wsid = "";
-            public string Action = "";
-            public string Param = "";
         }
     }
 }

@@ -1,17 +1,59 @@
 import Vue from 'vue';
-import Vuex, { StoreOptions } from 'vuex';
-import { RootState } from './state';
-import { vuexPageModule } from './modules/VueX/vuexpage-module';
+import Vuex from 'vuex';
+import Cat from '../../common/types/uiTypes';
+
+import Communication from '../../common/services/communicationService';
 
 Vue.use(Vuex);
 
-const store: StoreOptions<RootState> = {
-    state: {
-        version: '1.0.0'
-    },
-    modules: {
-        vuexPageModule
-    }
-};
+export const store = new Vuex.Store({
+	state: {
+        voteCount: -1,
+        cats: null,
+        modifiedCat: null
 
-export default new Vuex.Store<RootState>(store);
+    },
+    mutations: {
+        changeVoteCount(state, voteCount) {
+            state.voteCount = voteCount;
+        },
+        changeCats(state, cats) {
+            state.cats = cats;
+        },
+        modifyCat(state, cat) {
+            state.modifiedCat = cat;
+        }
+    },
+    getters: {
+        voteCount(state) {
+            if (state.voteCount === -1) {
+                Communication.callService('voteCount', {}, function (result: string) {
+                    try {
+                        state.voteCount = parseInt(result);
+                    }
+                    catch (e) {
+                        alert('Error voteCount ' + e.message);
+                    }
+                }.bind(this));
+            }
+            return state.voteCount;
+        },
+        cats(state) {
+            if (state.cats === null) {
+                Communication.callService('cats', {}, function (result: string) {
+                    try {
+                        state.cats = JSON.parse(result);
+                    }
+                    catch (e) {
+                        alert('Error cats ' + e.message);
+                    }
+                }.bind(this));
+            }
+            return state.cats;
+        },
+        modifiedCat(state) {
+            return state.modifiedCat;
+        }
+    }
+});
+

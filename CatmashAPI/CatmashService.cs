@@ -22,15 +22,25 @@ namespace CatmashAPI
                 return Cats.Sum(c => c.Score);
             }
         }
+        public int GetScore(string catId)
+        {
+            int score = -1;
+            using (var db = new CatContext())
+            {
+                var cat = db.Cats.SingleOrDefault(c => c.Id == catId);
+                if (cat != null) score = cat.Score;
+            }
+            return score;
+        }
         public bool SetVote(string catId)
         {
             bool ok = false;
             using (var db = new CatContext())
             {
-                var result = db.Cats.SingleOrDefault(c => c.Id == catId);
-                if (result != null)
+                var cat = db.Cats.SingleOrDefault(c => c.Id == catId);
+                if (cat != null)
                 {
-                    result.Score += 1;
+                    cat.Score += 1;
                     db.SaveChanges();
                     ok = true;
                 }

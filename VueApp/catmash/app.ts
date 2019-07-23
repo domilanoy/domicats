@@ -4,10 +4,11 @@ import VueRouter from 'vue-router'
 Vue.config.performance = true
 Vue.use(VueRouter)
 
-import store from './store/store'
+import { store } from './store/store'
 import { router } from './router/router'
-
 import App from './App.vue'
+
+Vue.prototype.$eventBus = new Vue();
 
 new Vue({
   store,
