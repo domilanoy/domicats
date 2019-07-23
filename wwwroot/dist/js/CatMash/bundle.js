@@ -418,7 +418,7 @@ var routePrefix = 'catmash';
 var routes = [
     {
         path: '*',
-        redirect: { name: 'Info' }
+        redirect: { name: 'Cats' }
     },
     {
         name: 'Info',

@@ -11,7 +11,7 @@ const routePrefix = 'catmash'
 const routes = [
 	{
 		path: '*',
-		redirect: { name: 'Info' }
+		redirect: { name: 'Cats' }
 	},
 	{
 		name: 'Info',
